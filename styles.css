@@ -166,14 +166,12 @@ body.menu-open { overflow: hidden; }
 .project-dialog-contribution[hidden], .project-dialog-contribution-label[hidden] { display: none !important; }
 .about-main { padding-bottom: 1px; }
 .about-hero { padding-top: 68px; padding-bottom: 56px; animation: rise-in .55s ease-out both; }
-.about-hero > h1 { margin: 0 0 42px; font-size: clamp(40px, 6vw, 66px); font-weight: 660; letter-spacing: -.07em; line-height: 1.04; }
-.about-hero > h1 em { color: var(--accent); font-style: normal; }
+.about-headline { margin: 0 0 22px; font-size: clamp(27px, 3vw, 36px); font-weight: 660; letter-spacing: -.06em; line-height: 1.12; }
 .about-split { display: grid; grid-template-columns: 1fr .9fr; align-items: center; gap: 10%; }
 .profile-card { min-height: 0; aspect-ratio: 4 / 5; padding: 0; position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: 10px; background: var(--accent-soft); }
 .profile-photo { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 46%; }
 .about-copy { max-width: 420px; }
-.about-lede { margin: 0 0 19px; font-size: 22px; font-weight: 570; letter-spacing: -.035em; line-height: 1.4; }
-.about-copy p:not(.about-lede) { margin: 0 0 16px; color: var(--muted); font-size: 13px; }
+.about-copy p { margin: 0 0 16px; color: var(--muted); font-size: 13px; font-weight: 400; line-height: 1.65; }
 .about-copy .text-link { margin-top: 7px; }
 .about-values { padding-top: 24px; padding-bottom: 88px; }
 .belief-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; padding-top: 19px; border-top: 1px solid var(--line); }
@@ -198,7 +196,7 @@ body.menu-open { overflow: hidden; }
   .media-word { font-size: clamp(33px, 9vw, 48px); }
   .contact-band { padding: 45px 20px 49px; }
   .about-hero { padding-top: 45px; padding-bottom: 38px; }
-  .about-hero > h1 { margin-bottom: 29px; }
+  .about-headline { font-size: clamp(29px, 8vw, 38px); }
   .about-split { grid-template-columns: 1fr; gap: 28px; }
   .profile-card { width: min(100%, 430px); justify-self: center; }
   .about-copy { max-width: 570px; }
