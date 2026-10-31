@@ -144,6 +144,9 @@ body.menu-open { overflow: hidden; }
 .contact-band h2 { margin: 0; font-size: clamp(32px, 5vw, 52px); font-weight: 620; letter-spacing: -.065em; line-height: 1.1; }
 .contact-band h2 em { color: var(--accent); font-style: normal; }
 .contact-link { margin-top: 22px; }
+.contact-details { display: flex; justify-content: center; flex-wrap: wrap; gap: 22px; margin-top: 18px; font-size: 12px; }
+.contact-details a { color: var(--muted); text-decoration: none; transition: color .2s; }
+.contact-details a:hover { color: var(--ink); }
 .site-footer { width: min(1120px, calc(100% - 64px)); min-height: 80px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; color: var(--muted); font-size: 11px; }
 .site-footer a { color: var(--ink); text-decoration: none; }
 .project-dialog { position: relative; width: min(980px, calc(100% - 32px)); max-width: none; max-height: 90vh; padding: 0; overflow: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); color: var(--ink); }

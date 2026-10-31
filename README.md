@@ -15,7 +15,7 @@ For the repeatable video intake, asset, card, and verification steps, see [VIDEO
 - Replace the sample projects in `index.html` with your titles and descriptions.
 - Assign a project to a section with its card’s `data-sections` attribute (`byu`, `ad-creation`, `passion`, or `archive`). Add `favorites` to any card you want to show under My Favorites. My Work shows every card by default.
 - Add a web-ready MP4 to `assets/videos/` and a matching still image to `assets/posters/`. Set the card’s `<video data-src="..." data-poster="...">` paths and include an `<img class="project-poster">` for that still. The still appears at rest; the MP4 loads and plays muted on hover or keyboard focus, then the still returns when focus leaves. The uploaded originals are not needed in the site folder.
-- Replace `hello@example.com` in `index.html` and `about.html` with your contact email.
+- Contact details are set in the contact sections of `index.html` and `about.html`.
 - Update the draft biography and beliefs in `about.html`.
 - Adjust layout, typography, and the light/dark palettes in `styles.css`.
 
