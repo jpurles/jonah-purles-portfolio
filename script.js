@@ -28,6 +28,8 @@ const dialogPlaceholder = projectDialog?.querySelector('.project-dialog-placehol
 const dialogTitle = projectDialog?.querySelector('#project-dialog-title');
 const dialogSection = projectDialog?.querySelector('.project-dialog-section');
 const dialogDescription = projectDialog?.querySelector('.project-dialog-description');
+const dialogContributionLabel = projectDialog?.querySelector('.project-dialog-contribution-label');
+const dialogContribution = projectDialog?.querySelector('.project-dialog-contribution');
 
 workCards.forEach((card) => { card.hidden = !card.hasAttribute('data-home-featured'); });
 
@@ -43,6 +45,7 @@ function openProjectDialog(card, video) {
   projectDialog.querySelector('.project-dialog-media')?.classList.toggle('is-landscape', card.classList.contains('is-landscape'));
   const title = card.querySelector('.work-copy h3')?.textContent?.trim() || 'Project';
   const description = card.querySelector('.work-copy > p:not(.work-index)')?.textContent?.trim() || '';
+  const contribution = card.dataset.contribution?.trim() || '';
   const sections = card.dataset.sections?.split(/\s+/) || [];
   const activeSection = document.body.dataset.activeSection;
   const category = sections.includes(activeSection) ? activeSection : sections[0];
@@ -54,6 +57,11 @@ function openProjectDialog(card, video) {
   if (dialogTitle) dialogTitle.textContent = title;
   if (dialogSection) dialogSection.textContent = categoryLabel;
   if (dialogDescription) dialogDescription.textContent = description;
+  if (dialogContributionLabel) dialogContributionLabel.hidden = !contribution;
+  if (dialogContribution) {
+    dialogContribution.textContent = contribution;
+    dialogContribution.hidden = !contribution;
+  }
   dialogPlaceholder.replaceChildren();
   dialogVideo.pause();
   dialogVideo.removeAttribute('src');
